@@ -106,6 +106,15 @@ public class SceneChanger {
 	}
 	
 	/**
+	 * Scene 5, the pond.
+	 */
+	public void showScene5() {
+		UI.bgPanel[1].setVisible(false);
+		UI.bgPanel[5].setVisible(true);
+		UI.mainTextArea.setText("You find a pond to the right of the shack.");
+	}
+	
+	/**
 	 * The Game Over screen.
 	 * @param currentBgNum The current background's number so that it can be hidden.
 	 */

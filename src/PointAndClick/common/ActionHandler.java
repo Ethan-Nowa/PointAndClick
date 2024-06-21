@@ -35,6 +35,7 @@ public class ActionHandler implements ActionListener{
 		case "goScene1": sChanger.showScene1(); break;
 		case "goScene2": sChanger.showScene2(); break;
 		case "goScene3": sChanger.showScene3(); break;
+		case "goScene5": sChanger.showScene5(); break;
 		// HOUSE
 		case "inspectHouse": ev1.inspectHouse(); break;
 		case "restHouse": ev1.restHouse(); break;

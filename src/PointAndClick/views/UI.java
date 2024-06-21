@@ -374,6 +374,7 @@ public class UI extends JFrame {
 		createObject(1, 225, 30, 200, 254, "/PointAndClick/resources/bird-house-6563517_200_254.png", "Inspect", "Rest", "Save Game", "inspectHouse", "restHouse", "saveHouse");
 		createObject(1, 550, 250, 150, 100, "/PointAndClick/resources/chest-1657362_150_100.png", "Inspect", "Kick", "Open", "inspectChest", "kickChest", "openChest");
 		createArrowButton(1, 0, 150, 50, 50, "/PointAndClick/resources/leftArrow50x50.png", "goScene2");
+		createArrowButton(1, 650, 150, 50, 50, "/PointAndClick/resources/rightArrow50x50.png", "goScene5");
 		bgPanel[1].add(bgLabel[1]);
 		
 		// SCENE 2, the cave entrance
@@ -418,6 +419,7 @@ public class UI extends JFrame {
 		
 		// SCENE 5, the pond
 		createBackground(5, "/PointAndClick/resources/depositphotos_63020651-stock-photo-beautiful-pond-in-the-woods.jpg");
+		createArrowButton(5, 0, 150, 50, 50, "/PointAndClick/resources/leftArrow50x50.png", "goScene1");
 		bgPanel[5].add(bgLabel[5]);
 	}
 	
