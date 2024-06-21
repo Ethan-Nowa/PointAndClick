@@ -78,7 +78,7 @@ public class UI extends JFrame {
 	JPanel lifePanel;
 	public static JLabel lifeLabel[] = new JLabel[6];
 	JPanel inventoryPanel;
-	public static JLabel lanternLabel, daggerLabel, armorLabel;
+	public static JLabel lanternLabel, daggerLabel, armorLabel, rodLabel, fishLabel;
 	
 	/**
 	 * Creates the frame.
@@ -252,6 +252,20 @@ public class UI extends JFrame {
 		armorIcon = new ImageIcon(image);
 		armorLabel.setIcon(armorIcon);
 		inventoryPanel.add(armorLabel);
+		
+		rodLabel = new JLabel();
+		ImageIcon rodIcon = new ImageIcon(UI.class.getResource("/PointAndClick/resources/fishing-pole.png"));
+		image = rodIcon.getImage().getScaledInstance(35, 35, Image.SCALE_DEFAULT);
+		rodIcon = new ImageIcon(image);
+		armorLabel.setIcon(rodIcon);
+		inventoryPanel.add(rodLabel);
+		
+		fishLabel = new JLabel();
+		ImageIcon fishIcon = new ImageIcon(UI.class.getResource("/PointAndClick/resources/fried-fish.png"));
+		image = fishIcon.getImage().getScaledInstance(35, 35, Image.SCALE_DEFAULT);
+		fishIcon = new ImageIcon(image);
+		armorLabel.setIcon(fishIcon);
+		inventoryPanel.add(fishLabel);
 	}
 	
 	/**

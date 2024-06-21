@@ -45,7 +45,7 @@ public class Events01 {
 	public void saveHouse() {
 		try {
 			FileWriter write = new FileWriter("saveData.txt");
-			write.write(Player.playerLife +"\n"+ Player.playerDamage +"\n"+ Player.playerDefense +"\n"+ Player.lantern +"\n"+ Player.dagger +"\n"+ Player.armor);
+			write.write(Player.playerLife +"\n"+ Player.playerDamage +"\n"+ Player.playerDefense +"\n"+ Player.lantern +"\n"+ Player.dagger +"\n"+ Player.armor +"\n"+ Player.rod +"\n"+ Player.fish);
 			write.close();
 		} catch (IOException e) {
 			System.out.println("An error occurred.");

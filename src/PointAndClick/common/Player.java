@@ -29,6 +29,8 @@ public class Player {
 	public static boolean lantern;
 	public static boolean dagger;
 	public static boolean armor;
+	public static boolean rod;
+	public static boolean fish;
 	
 	/**
 	 * Sets the Player's default status.
@@ -46,6 +48,8 @@ public class Player {
 		lantern = false;
 		dagger = false;
 		armor = false;
+		rod = false;
+		fish = false;
 		
 		updatePlayerUI();
 	}
@@ -66,6 +70,8 @@ public class Player {
 		lantern = fileInput.nextBoolean();
 		dagger = fileInput.nextBoolean();
 		armor = fileInput.nextBoolean();
+		rod = fileInput.nextBoolean();
+		fish = fileInput.nextBoolean();
 		
 		fileInput.close();
 		
@@ -120,6 +126,18 @@ public class Player {
 		}
 		if (armor == true) {
 			UI.armorLabel.setVisible(true);
+		}
+		if (rod == false) {
+			UI.rodLabel.setVisible(false);
+		}
+		if (rod == true) {
+			UI.rodLabel.setVisible(true);
+		}
+		if (fish == false) {
+			UI.fishLabel.setVisible(false);
+		}
+		if (fish == true) {
+			UI.fishLabel.setVisible(true);
 		}
 	}
 }
