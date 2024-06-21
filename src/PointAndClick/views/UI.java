@@ -369,21 +369,21 @@ public class UI extends JFrame {
 	 * Initializes the Scenes by creating all of the backgrounds and objects.
 	 */
 	public void initScene() {	
-		// SCENE 1
+		// SCENE 1, the starting house
 		createBackground(1, "/PointAndClick/resources/istockphoto-1139610215-170667a.jpg");
 		createObject(1, 225, 30, 200, 254, "/PointAndClick/resources/bird-house-6563517_200_254.png", "Inspect", "Rest", "Save Game", "inspectHouse", "restHouse", "saveHouse");
 		createObject(1, 550, 250, 150, 100, "/PointAndClick/resources/chest-1657362_150_100.png", "Inspect", "Kick", "Open", "inspectChest", "kickChest", "openChest");
 		createArrowButton(1, 0, 150, 50, 50, "/PointAndClick/resources/leftArrow50x50.png", "goScene2");
 		bgPanel[1].add(bgLabel[1]);
 		
-		// SCENE 2
+		// SCENE 2, the cave entrance
 		createBackground(2, "/PointAndClick/resources/istockphoto-641236218-612x612.jpg");
 		createObject(2, 400, 272, 200, 115, "", "Inspect", "Kick", "Cut", "inspectGround", "kickGround", "cutGround");
 		createArrowButton(2, 650, 150, 50, 50, "/PointAndClick/resources/rightArrow50x50.png", "goScene1");
 		createArrowButton(2, 325, 0, 50, 50, "/PointAndClick/resources/upArrow50x50.png", "goScene3");
 		bgPanel[2].add(bgLabel[2]);
 		
-		// SCENE 3
+		// SCENE 3, inside the cave
 		createBackground(3, "/PointAndClick/resources/istockphoto-1088221208-612x612.jpg");
 			// Adds the goblin.
 		goblinLabel = new JLabel();
@@ -412,9 +412,13 @@ public class UI extends JFrame {
 
 		bgPanel[3].add(bgLabel[3]);
 		
-		// SCENE 4
+		// SCENE 4, the end
 		createBackground(4, "/PointAndClick/resources/75f0ae768607ae68400579aa4bf4547e.jpg");
 		bgPanel[4].add(bgLabel[4]);
+		
+		// SCENE 5, the pond
+		createBackground(5, "/PointAndClick/resources/depositphotos_63020651-stock-photo-beautiful-pond-in-the-woods.jpg");
+		bgPanel[5].add(bgLabel[5]);
 	}
 	
 	/**

@@ -21,6 +21,7 @@ public class SceneChanger {
 		UI.bgPanel[2].setVisible(false);
 		UI.bgPanel[3].setVisible(false);
 		UI.bgPanel[4].setVisible(false);
+		UI.bgPanel[5].setVisible(false);
 		UI.mainTextArea.setVisible(false);
 		UI.titleLabel.setVisible(true);
 		UI.newGameButton.setVisible(true);
