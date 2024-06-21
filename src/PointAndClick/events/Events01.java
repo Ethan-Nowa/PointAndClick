@@ -29,6 +29,10 @@ public class Events01 {
 			Player.armor = true;
 			Player.playerDefense++;
 			Player.updatePlayerUI();
+		} else if (Player.rod == false) {
+			UI.mainTextArea.setText("You check the house again with the lantern's light. You spot a fishing rod laying against the floor that was previously hard to see.\n(Rod acquired)");
+			Player.rod = true;
+			Player.updatePlayerUI();
 		} else {
 			UI.mainTextArea.setText("You find nothing else in the house.");
 		}

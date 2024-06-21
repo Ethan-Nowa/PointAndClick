@@ -34,15 +34,14 @@ public class Events05 {
 		}
 	}
 	public void fishPond() {
-		UI.mainTextArea.setText("You try to catch the fish, but it's simply too quick for you.");
-		/*
-		if (Player.rod == true) {
+		if (Player.rod == true && Player.fish == false) {
 			UI.mainTextArea.setText("You find a worm and attach it to the hook of the fishing rod before casting it in, it doesn't take long for the fish to fall for your trap.\n(Fish acquired)");
 			Player.fish = true;
 			Player.updatePlayerUI();
+		} else if (Player.fish == true) {
+			UI.mainTextArea.setText("There are no more fish in the pond.");
 		} else {
 			UI.mainTextArea.setText("You try to catch the fish, but it's simply too quick for you.");
 		}
-		*/
 	}
 }

@@ -226,10 +226,10 @@ public class UI extends JFrame {
 		}
 		
 		inventoryPanel = new JPanel();
-		inventoryPanel.setBounds(650, 0, 100, 50);
+		inventoryPanel.setBounds(585, 0, 165, 50);
 		contentPane.add(inventoryPanel);
 		inventoryPanel.setBackground(new Color(0, 0, 0));
-		inventoryPanel.setLayout(new GridLayout(1, 3));
+		inventoryPanel.setLayout(new GridLayout(1, 5));
 		
 		// CREATE ITEMS
 		lanternLabel = new JLabel();
@@ -257,14 +257,14 @@ public class UI extends JFrame {
 		ImageIcon rodIcon = new ImageIcon(UI.class.getResource("/PointAndClick/resources/fishing-pole.png"));
 		image = rodIcon.getImage().getScaledInstance(35, 35, Image.SCALE_DEFAULT);
 		rodIcon = new ImageIcon(image);
-		armorLabel.setIcon(rodIcon);
+		rodLabel.setIcon(rodIcon);
 		inventoryPanel.add(rodLabel);
 		
 		fishLabel = new JLabel();
 		ImageIcon fishIcon = new ImageIcon(UI.class.getResource("/PointAndClick/resources/fried-fish.png"));
 		image = fishIcon.getImage().getScaledInstance(35, 35, Image.SCALE_DEFAULT);
 		fishIcon = new ImageIcon(image);
-		armorLabel.setIcon(fishIcon);
+		fishLabel.setIcon(fishIcon);
 		inventoryPanel.add(fishLabel);
 	}
 	
