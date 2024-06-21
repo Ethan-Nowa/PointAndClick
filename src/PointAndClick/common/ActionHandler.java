@@ -20,6 +20,7 @@ public class ActionHandler implements ActionListener{
 	public void actionPerformed(ActionEvent e) {
 		Events01 ev1 = new Events01();
 		Events02 ev2 = new Events02();
+		Events05 ev5 = new Events05();
 		SceneChanger sChanger = new SceneChanger();
 		Player play = new Player();
 		Combat combat = new Combat();
@@ -48,6 +49,10 @@ public class ActionHandler implements ActionListener{
 		case "inspectGround": ev2.inspectGround(); break;
 		case "kickGround": ev2.kickGround(); break;
 		case "cutGround": ev2.cutGround(); break;
+		// POND
+		case "inspectPond": ev5.inspectPond(); break;
+		case "drinkPond": ev5.drinkPond(); break;
+		case "fishPond": ev5.fishPond(); break;
 		// Attack
 		case "attack": combat.attack(); break;
 		// Defend

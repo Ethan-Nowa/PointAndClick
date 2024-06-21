@@ -419,6 +419,7 @@ public class UI extends JFrame {
 		
 		// SCENE 5, the pond
 		createBackground(5, "/PointAndClick/resources/depositphotos_63020651-stock-photo-beautiful-pond-in-the-woods.jpg");
+		createObject(5, 110, 150, 415, 115, "", "Inspect", "Drink", "Fish", "inspectPond", "drinkPond", "fishPond");
 		createArrowButton(5, 0, 150, 50, 50, "/PointAndClick/resources/leftArrow50x50.png", "goScene1");
 		bgPanel[5].add(bgLabel[5]);
 	}
