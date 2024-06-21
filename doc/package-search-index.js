@@ -1,0 +1,1 @@
+packageSearchIndex = [{"l":"All Packages","u":"allpackages-index.html"},{"l":"PointAndClick.common"},{"l":"PointAndClick.events"},{"l":"PointAndClick.views"}];updateSearchResults();
