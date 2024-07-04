@@ -15,6 +15,10 @@ Features:
 10. entry and game over screens to start/load game
 11. saving and loading by reading/writing file
 
+Start:
+![PointAndClick Start](https://github.com/Ethan-Nowa/PointAndClick/assets/140451419/4347bcd4-317d-4a5c-98f8-4f82c9520fbb)
+
+
 
 Combat Situation:
 
